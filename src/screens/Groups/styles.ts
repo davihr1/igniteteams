@@ -5,7 +5,7 @@ align-items: center;
 justify-content: center;
 flex: 1;
 display: flex;
-background-color: #000;
+background-color: ${({ theme }) => theme.COLORS.GRAY_600};
 `
 
 export const Title = styled.Text`
