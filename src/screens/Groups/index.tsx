@@ -1,11 +1,20 @@
-import { StatusBar } from 'react-native';
+import { Header } from '@components/Header';
 import * as S from './styles';
+import { HighLight } from '@components/Highlight';
+import { GroupsCard } from '@components/GroupCard';
 
 export function Groups() {
   return (
     <S.Container>
-      <StatusBar translucent backgroundColor='transparent' barStyle='light-content' />
-      <S.Title>Hello at Rocketseat Curses</S.Title>
+      <Header  />
+
+      <HighLight 
+      title="Turmas"
+      subtitle="Jogue com sua turma"
+       />
+
+       <GroupsCard title="Galera do ignite" />
+       <GroupsCard title="Galera do ignite" />
     </S.Container>
   );
 }

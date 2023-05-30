@@ -5,6 +5,7 @@ import { ThemeProvider } from 'styled-components';
 import theme from '@theme/index';
 import Loader from '@components/Loading';
 import { Roboto_400Regular, Roboto_700Bold, useFonts } from '@expo-google-fonts/roboto';
+import { StatusBar } from 'react-native';
 
 export default function App() {
   const [FontsLoading] = useFonts({
@@ -14,7 +15,8 @@ export default function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      { !FontsLoading ?  <Groups /> : <Loader /> }
+      { FontsLoading ?  <Groups /> : <Loader /> }
+      <StatusBar translucent backgroundColor='transparent' barStyle='light-content' />
     </ThemeProvider>
   );
 }

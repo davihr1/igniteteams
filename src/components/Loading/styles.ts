@@ -7,6 +7,6 @@ align-items: center;
 background-color: ${({theme}) => theme.COLORS.GRAY_600};
 `
 
-export const Text = styled.ActivityIndicator.attrs(({ theme }) => ({
-  color: theme.COLORS.GREEN_700
+export const Loaderindicator = styled.ActivityIndicator.attrs(({ theme }) => ({
+  color: theme.COLORS.GREEN_700,
 }))``
